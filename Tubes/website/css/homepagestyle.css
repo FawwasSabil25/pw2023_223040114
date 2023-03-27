@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: rgb(65, 65, 65);
+    font-family:'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+.navbar{
+    background-color: rgb(43, 43, 43);
+}
+.navbar-nav .nav-link {
+    color: orange; /* Change this to the color you want */
+    font-size: 15px;
+    text-decoration: none;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link :active{
+    color: yellow;
+}
+.btn{
+    color: orange;
+}
+.btn:hover,
+.btn:active{
+    color: yellow;
+}
+@media screen and (min-width: 994px){
+.d-flex{
+    width: 580px;
+    align-content: center;
+    }
+}
+@media screen and (max-width: 994px){
+.navbar-nav{
+    text-align: center;
+    }
+}
+.d-flex input{
+    background-color: rgba(163, 163, 163, 0.3);
+    border: none;
+    border-radius: 15px;
+}
+.d-flex ::placeholder{
+    color: orange;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item {
+    min-width: 100vw;
+  }
+.carousel-inner .carousel-item img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+/*style kategori*/
+.img-category{
+    width: 30px;
+    height: 30px
+}
+.row-container{
+    background-color: rgba(255, 255, 255, 0.397);
+    margin-top: 10px;
+
+}
+.row-container h5{
+    background-color: rgba(189, 189, 189, 0.397);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.category-menu:hover{
+    transform:scale(1.2);
+    transition: 0.2s;
+}
+
+
+/*style Product*/
+.product-container {
+    width: 100%;
+    overflow-x: auto;
+    align-content: center;
+}
+.product-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.product-box .card {
+    width: 240px;
+    margin: 5px;
+}
+.product-box .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
