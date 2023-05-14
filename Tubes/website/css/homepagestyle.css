@@ -9,14 +9,13 @@ body{
     background-color: rgb(43, 43, 43);
 }
 .navbar-nav .nav-link {
-    color: orange; /* Change this to the color you want */
-    font-size: 15px;
+    color: orange;
     text-decoration: none;
 }
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link :active{
     color: yellow;
-}
+}   
 .btn{
     color: orange;
 }
@@ -62,10 +61,12 @@ body{
     width: 30px;
     height: 30px
 }
+.box{
+    margin-bottom: 50px;
+}
 .row-container{
     background-color: rgba(255, 255, 255, 0.397);
-    margin-top: 10px;
-
+    margin-top: 5px;
 }
 .row-container h5{
     background-color: rgba(189, 189, 189, 0.397);
@@ -79,27 +80,8 @@ body{
 
 
 /*style Product*/
-.product-container {
-    width: 100%;
-    overflow-x: auto;
+.card-button-group {
     align-content: center;
 }
-.product-box {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 10px;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    margin-left: 15px;
-    margin-top: 20px;
-}
-.product-box .card {
-    width: 240px;
-    margin: 5px;
-}
-.product-box .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
+/*footer*/
