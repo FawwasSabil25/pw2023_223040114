@@ -57,10 +57,13 @@
     cursor: pointer;
     border-radius: 20px;
 }
-.input button:hover,
-.input button:active{
+.input button:hover{
     background-color: #dc731d;
     color: black;
+}
+.input button:active{
+    background-color: rgba(0, 0, 0, 0.833);
+    color: orange;
 }
 .input span{
     margin-top: 15px;

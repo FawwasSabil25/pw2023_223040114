@@ -1,46 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
-    background-color: rgb(95, 95, 95);
-    font-size: 15px;
+body {
+    background-image: url('../img/background.png');
     font-family: 'Montserrat', sans-serif;
 }
-.container{
-    width: 1000px;
-    background-color: rgba(255, 255, 255, 0.3);
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    background-color: rgba(251, 251, 251, 0.3);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 30px;
-    box-shadow: 5px, 5px, 10px, 0;
-    border-radius: 30px;
-    padding: 30px 120px;
-}
-.container h3{
-    font-size: 35px;
-    margin-top: 10px;
-}
-.logo img{
-    height: 50px;
-}
-.container input{
-    background-color: rgba(255, 255, 255, 0.3);
-    border: none;
-    border-radius: 4px;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.3)
-}
-.container button{
-    width: 370px;
     border-radius: 15px;
-    background-color: rgba(172, 172, 172, 0.689);
-    margin-top: 10px;
+    box-shadow: 3px 3px 10px 0 #0000;
+    padding: 30px;
 }
-.container label a{
+
+.form-container h3 {
+    color: beige;
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input input {
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    color: #dc731d;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.input button .submit{
+    width: 45%;
+    height: 30px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: hsl(27, 77%, 49%);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.input button:last-of-type {
+    margin-right: 0;
+}
+
+.input button:hover {
+    background-color: #dc731d;
+    color: black;
+}
+
+.input button:active {
+    background-color: rgba(0, 0, 0, 0.833);
+    color: orange;
+}
+
+
+.input span {
+    margin-top: 15px;
+    color: beige;
+}
+
+.input span a {
     text-decoration: none;
-    color: red;
+    color: #dc731d;
 }
-.container label a:hover,
-.container label a:active{
+
+.input span a:hover,
+.input span a:active {
     color: #ffbe89;
 }
