@@ -1,14 +1,7 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/loginstyle.css">
-    <title>SVR shop Login</title>
-    
-  </head>
-  <body>
+<?php $title = 'Login'?>
+<?php require('partials/header.php') ?>
+
+<div class="login">
     <div class="container">
         <form class="form-container">
             <div class="logo"><img src="../img/logo.png"></div>
@@ -19,13 +12,12 @@
                     <input type="password" name="Password" placeholder="Password" required="required" />
                     <button type="submit" class="submit" name="submit">Open Sesame</button>
                 </form>
-                <span>First Time? register <a href="../pages/regis.html">here</a></span>
+                <span>First Time? register <a href="regis.views.php">here</a></span>
             </div>
-            
     </div>
-
 
     <script src="../js/bootstrap.js"></script>
     <script src="../js/popper.min.js"></script>
-  </body>
-</html> 
+    </body>
+
+    </html>
