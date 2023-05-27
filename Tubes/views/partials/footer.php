@@ -1,5 +1,5 @@
-<footer>
-    <div class="container">
+<footer style="width:100%;">
+    <div class="foot-container">
         <img src="../img/logo.png" alt="">
         <p>Copyright: @2023 | Created Hardly by Fawwas Sabil</p>
     </div>

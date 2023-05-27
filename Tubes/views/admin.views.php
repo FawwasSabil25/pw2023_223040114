@@ -62,7 +62,15 @@
     </a>
   </div>
 </div>
+<div class="footer"></div>
+  <div class="container">
+    <img src="../img/logo.png" alt="">
+    <p>Copyright: @2023 | Created Hardly by Fawwas Sabil</p>
+  </div>
 </div>
+</div>
+
+
 
 
 <?php require('partials/footer.php')?>

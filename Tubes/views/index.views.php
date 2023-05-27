@@ -1,4 +1,4 @@
-<?php $title = 'Home';?>
+<?php $title = 'Home'; ?>
 <?php
 $product = [
     [
@@ -85,7 +85,7 @@ $product = [
     [
         "cover" => "powerwash.jpg",
         "name" => "Power Wash Simulator",
-        "mian-description" => "a relaxing game where you clean and restore various items and surfaces using a high-pressure washer.",
+        "main-description" => "a relaxing game where you clean and restore various items and surfaces using a high-pressure washer.",
         "genre" => "Simulation",
         "publisher" => "Square Enix Collective",
         "rating" => "81%",
@@ -142,5 +142,11 @@ $product = [
         </div>
     <?php endforeach; ?>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 <?php require('partials/footer.php') ?>

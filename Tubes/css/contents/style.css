@@ -92,7 +92,7 @@ nav img{
 
 /* items */
 .row{
-    margin-left: 5px;
+    margin-left: 10px;
 }
 .card-button-group {
     align-content: center;
@@ -117,14 +117,16 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
     width: 100%;
-    bottom: 0;
     position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
 }
-footer .container {
+footer .foot-container {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 footer img{
     width: 40px;
@@ -335,7 +337,6 @@ footer p{
 .admin .welcome-text h2{
     color: white;
 }
-
 .admin .row{
     margin-left: 10px;
     margin-right: 10px;
@@ -359,3 +360,53 @@ footer p{
     margin-bottom: 20px;
     margin-top: 10px;
 }
+/* end admin page */
+
+/* itemdet page */
+
+.itemdesc .container{
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+.itemdesc img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 95%;
+}
+.itemdesc a{
+    text-decoration: none;
+    color: purple;
+}
+.itemdesc h2{
+    color: purple;
+}
+.itemdesc button{
+    width: 100%;
+    background-color: pink;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.itemdesc button p{
+    color: purple;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.itemdesc button:hover{
+    background-color: purple;
+    transition: 0.3s;
+}
+.itemdesc button p:hover{
+    color: white;
+    transition: 0.3s;
+}
+.itemdesc button:active{
+    background-color: black;
+}
+.itemdesc button :active{
+    color: pink;
+}
+/* end itemdet page*/
