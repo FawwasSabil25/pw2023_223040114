@@ -1,0 +1,40 @@
+/* navbar */
+nav{
+    background-color: rgb(55, 48, 107);
+    display: flex;
+    align-items: center;
+}
+nav .navbar-brand{
+    color: white;
+    padding: 0;
+    margin-right: 10px;
+}
+.navbar-brand-container{
+    display: flex;
+    align-items: center;
+}
+nav img{
+    width: 40px;
+    padding: 0;
+    margin-right: 20px;
+}
+.navbar-collapse {
+  transition: max-height 0.5s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+.navbar-collapse.show {
+  max-height: 500px;
+}
+.navbar-nav .nav-link {
+    color: white;
+}
+.searchbar button[type="submit"] {
+    background-color: rgb(102, 52, 127);
+    color: white;
+}
+.searchbar button[type="submit"]:active{
+    transition: 0.05s;
+}
+
+/* end navbar */

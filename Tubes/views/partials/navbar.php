@@ -5,15 +5,15 @@
     </button>
     <div class="navbar-brand-container">
       <a class="navbar-brand" href="#">SVR Shop</a>
-      <img src="../img/logo.png" alt="">
+      <img src="img/logo.png" alt="">
     </div>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="index.views.php">Home</a>
+          <a class="nav-link" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login.views.php">Login</a>
+          <a class="nav-link" href="login.php">Login</a>
         </li>
       </ul>
       <div class="searchbar">

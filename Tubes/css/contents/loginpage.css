@@ -1,0 +1,77 @@
+.login .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .login .logo img{  
+    height: 50px;
+    margin-bottom: 20px;
+ }
+ .login .form-container{
+    background-color: rgba(251, 251, 251, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 0 #0000;
+    padding: 30px;
+ }
+ .login .form-container h3{
+    color: beige;
+    text-align: center;
+ }
+ .login .input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+ .login .input input{
+    width: 300px; 
+    margin-bottom: 10px; 
+    background: rgba(0,0,0,0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    color: pink;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+ }
+ .login input::placeholder {
+     color: white;
+ }
+ .login .input button{
+    width: 300px;
+    height: 30px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(210, 118, 133);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 20px;
+ }
+ .login .input button:hover{
+    background-color: rgb(210, 118, 133);
+    color: white;
+ }
+ .login .input button:active{
+    background-color: rgba(0, 0, 0, 0.833);
+    color: rgb(210, 118, 133);
+ }
+ .login .input span{
+    margin-top: 15px;
+    color: beige;
+ }
+ .login .input span a{
+    text-decoration: none;
+    color: pink;
+ }
+ .login .input span a:hover,
+ .login .input span a:active{
+    color: rgb(210, 118, 133);
+ }
+ /* end login page */

@@ -1,0 +1,19 @@
+/* items */
+.row{
+    margin-left: 10px;
+}
+.card-button-group {
+    align-content: center;
+}
+.col a{
+    text-decoration: none;
+}
+.card button{
+    width: 100%;
+    background-color: rgb(210, 118, 133);
+}
+.card button:hover{
+    background-color: pink;
+    transition: 0.3s;
+}
+/* end items*/

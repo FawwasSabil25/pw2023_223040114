@@ -1,0 +1,103 @@
+/* regis page */
+.regis .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.regis .logo img {
+    height: 50px;
+    margin-bottom: 20px;
+}
+.regis .form-container {
+    background-color: rgba(251, 251, 251, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 0 #0000;
+    padding: 30px;
+}
+.regis .form-container h3 {
+    color: beige;
+    text-align: center;
+}
+.regis .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.regis .input input {
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    color: pink;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+.regis input::placeholder {
+    color: white;
+}
+.regis .row{
+    width: 100%;
+}
+.regis .input button.submit {
+    width: 100%;
+    background-color: white;
+    color: purple;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.regis .input button.submit:hover{
+    background-color: pink;
+    color: black;
+    transition: 0.3s;
+}
+.regis .input button.submit:active{
+    background-color: black;
+    color: pink;
+}
+.regis .input button.reset {
+    width: 100%;
+    background-color: purple;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.regis .input button.reset:hover{
+    background-color: black;
+    color: pink;
+    transition: 0.3s;
+}
+.regis .input button.reset:active{
+    background-color: pink;
+    color: black;
+}
+.regis .input span {
+    margin-top: 15px;
+    color: beige;
+}
+
+.regis .input span a {
+    text-decoration: none;
+    color: purple;
+}
+
+.regis .input span a:hover,
+.regis .input span a:active {
+    color: pink;
+}

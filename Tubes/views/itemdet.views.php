@@ -1,4 +1,3 @@
-<?php $title = 'Details' ?>
 <?php require('partials/header.php') ?>
 <?php require('partials/navbar.php') ?>
 
@@ -7,7 +6,7 @@
         <div class="row">
             <div class="col-lg-5">
                 <div class="main-img">
-                    <img src="../img/productdesc/main/guilty gear.jpg">
+                    <img src="img/productdesc/main/guilty gear.jpg">
                 </div>
             </div>
             <div class="col-lg-7">

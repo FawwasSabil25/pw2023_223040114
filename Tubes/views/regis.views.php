@@ -1,10 +1,10 @@
-<?php $title = 'Registration' ?>
+
 <?php require('partials/header.php') ?>
 
 <div class="regis">
     <div class="container">
         <form class="form-container">
-            <div class="logo"><img src="../img/logo.png"></div>
+            <div class="logo"><img src="img/logo.png"></div>
             <h3>Registration</h3>
             <div class="input">
                 <form method="post">
@@ -38,14 +38,14 @@
                         </div>
                     </div>
                 </form>
-                <span>Just remembered you have an account? Login <a href="login.views.php">here</a></span>
+                <span>Just remembered you have an account? Login <a href="login.php">here</a></span>
             </div>
         </form>
     </div>
 </div>
 
-<script src="../js/bootstrap.js"></script>
-<script src="../js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/popper.min.js"></script>
 </body>
 
 </html>

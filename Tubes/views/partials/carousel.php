@@ -8,16 +8,16 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="../img/homepage/carousel/1.jpg" class="d-block img-fluid" alt="1">
+        <img src="img/homepage/carousel/1.jpg" class="d-block img-fluid" alt="1">
       </div>
       <div class="carousel-item active">
-        <img src="../img/homepage/carousel/2.jpg" class="d-block img-fluid" alt="1">
+        <img src="img/homepage/carousel/2.jpg" class="d-block img-fluid" alt="1">
       </div>
       <div class="carousel-item active">
-        <img src="../img/homepage/carousel/3.jpg" class="d-block img-fluid" alt="1">
+        <img src="img/homepage/carousel/3.jpg" class="d-block img-fluid" alt="1">
       </div>
       <div class="carousel-item active">
-        <img src="../img/homepage/carousel/4.jpg" class="d-block img-fluid" alt="1">
+        <img src="img/homepage/carousel/4.jpg" class="d-block img-fluid" alt="1">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
