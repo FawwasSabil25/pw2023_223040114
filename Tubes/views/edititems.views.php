@@ -32,10 +32,10 @@
                     <td><?= $prdct['genre']; ?></td>
                     <td><?= $prdct['price']; ?></td>
                     <td>
-                        <a href="" class="edit">
+                        <a href="updateitems.php?id=<?= $prdct["id"];?>" class="edit">
                             <button>Edit</button>
                         </a>    |   
-                        <a href="edititems.php?id=<?= $prdct["id"];?>" class="delete">
+                        <a href="edititems.php?id=<?= $prdct["id"];?>" class="delete" onclick="return confirm('Are you sure')">
                             <button>Delete</button>
                         </a>
                     </td>

@@ -49,3 +49,34 @@ function delete($id){
 
     return mysqli_affected_rows($conn);
 }
+
+
+
+function update($items){
+    $conn = koneksi();
+    $id = ($items['id']);
+    $name = htmlspecialchars($items['name']);
+    $publisher = htmlspecialchars($items['publisher']);
+    $genre = htmlspecialchars($items['genre']);
+    $rating = htmlspecialchars($items['rating']);
+    $price = htmlspecialchars($items['price']);
+    $main_desc = htmlspecialchars($items['main_desc']);
+    $sec_desc = htmlspecialchars($items['sec_desc']);
+    $cover = htmlspecialchars($items['cover']);
+
+    $query = "UPDATE items SET name = '$name',
+                publisher = '$publisher',
+                genre = '$genre',
+                rating = '$rating',
+                price = '$price',
+                main_desc = '$main_desc',
+                sec_desc = '$sec_desc',
+                cover = '$cover'
+            WHERE id = $id
+                ";
+
+    mysqli_query($conn, $query);
+
+    return mysqli_affected_rows($conn);
+
+}

@@ -29,7 +29,12 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <input type="text" name="desc" placeholder="Description" required="required" class="input-field" />
+                        <input type="text" name="maindesc" placeholder="MainDescription" required="required" class="input-field" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" name="secdesc" placeholder="SecDescription" required="required" class="input-field" />
                     </div>
                 </div>
                 <div class="row">
