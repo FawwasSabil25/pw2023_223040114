@@ -20,14 +20,14 @@ function query($query){
 
 function add($items){
     $conn = koneksi();
-    $name = $items['name'];
-    $publisher = $items['publisher'];
-    $genre = $items['genre'];
-    $rating = $items['rating'];
-    $price = $items['price'];
-    $main_desc = $items['main_desc'];
-    $sec_desc = $items['$sec_desc'];
-    $cover = $items['cover'];
+    $name = htmlspecialchars($items['name']);
+    $publisher = htmlspecialchars($items['publisher']);
+    $genre = htmlspecialchars($items['genre']);
+    $rating = htmlspecialchars($items['rating']);
+    $price = htmlspecialchars($items['price']);
+    $main_desc = htmlspecialchars($items['main_desc']);
+    $sec_desc = htmlspecialchars($items['$sec_desc']);
+    $cover = htmlspecialchars($items['$sec_desc']);
 
 $query = "  INSERT INTO 
                 items
@@ -35,6 +35,17 @@ $query = "  INSERT INTO
                 (null,'$name','$publisher','$genre','$rating','$price','$main_desc','$sec_desc','$cover')";
 
     mysqli_query($conn, $query) or die(mysqli_error($conn));
+
+    return mysqli_affected_rows($conn);
+}
+
+
+function delete($id){
+    $conn = koneksi();
+
+    $query = "DELETE FROM items WHERE id = $id";
+    mysqli_query($conn, $query) or die(mysqli_error($conn));
+    
 
     return mysqli_affected_rows($conn);
 }

@@ -22,14 +22,14 @@
     </a>
   </div>
   <div class="col">
-    <a href="">
+    <a href="edititems.php">
       <div class="card">
         <div class="card-body d-flex flex-column align-items-center justify-content-center">
           <div class="card-icon">
             <img src="img/admin/out.svg" class="d-block img-fluid" alt="1">
           </div>
-          <h5 class="card-title">Remove Items</h5>
-          <p class="card-text">Remove Items from main page</p>
+          <h5 class="card-title">Edit & Remove Items</h5>
+          <p class="card-text">Edit & Remove Items from main page</p>
         </div>
       </div>
     </a>

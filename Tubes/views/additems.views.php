@@ -43,7 +43,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="submit">
-                            <button type="submit" class="submit">
+                            <button type="submit" class="add" name="add">
                                 S u b m i t
                             </button>
                         </div>

@@ -1,6 +1,6 @@
 <?php
     $title = 'Add Items';
-    require('views/additems.views.php');
+    require('functions.php');
 
 //insert data items jika mengklik submit
 if(isset($_POST['add'])){
@@ -13,3 +13,6 @@ if(isset($_POST['add'])){
     }
 
 }
+
+require("views/additems.views.php");
+
