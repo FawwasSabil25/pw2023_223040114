@@ -3,6 +3,21 @@
 <?php require('partials/carousel.php') ?>
 <?php require('partials/categories.php') ?>
 
+<?php if(empty($product)) : ?>
+
+<div class="emptyalert">
+  <div class="container" 
+        style="color: white;
+        width: 100%;
+        margin-left: 43%;
+        margin-bottom: 60px;
+        font-size: 20px;">
+    <p>Product Not Found !</p>
+  </div>
+</div>
+
+<?php endif;?>
+
 <div class="row row-cols-1 row-cols-md-5 g-4">
     <?php foreach ($product as $prdct): ?>
         <div class="col">
@@ -45,6 +60,7 @@
             </a>
         </div>
     <?php endforeach; ?>
+
 </div>
 <br>
 <br>

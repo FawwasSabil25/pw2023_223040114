@@ -17,11 +17,18 @@
         </li>
       </ul>
       <div class="searchbar">
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn" type="submit">Search</button>
+        <form class="d-flex" role="search" action="" method="POST" >
+          <input class="form-control me-2" name="keyword" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn" type="submit" name="search">Search</button>
         </form>
       </div>
-    </div>
+    </div>  
   </div>
 </nav>
+
+<?php 
+  if(isset($_POST['search'])){
+    $product = search($_POST['keyword']);
+  }
+
+?>

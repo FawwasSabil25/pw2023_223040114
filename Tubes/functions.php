@@ -80,3 +80,22 @@ function update($items){
     return mysqli_affected_rows($conn);
 
 }
+
+
+function search($keyword){
+    $conn = koneksi();
+
+    $keyword = mysqli_real_escape_string($conn, $keyword);
+
+    $query = "SELECT * FROM items
+          WHERE name LIKE '%" . $keyword . "%'";
+
+
+    $result = mysqli_query($conn, $query);
+
+    $rows = [];
+    while ($row = mysqli_fetch_assoc($result)){
+        $rows[] = $row;
+    }
+    return $rows;
+}
