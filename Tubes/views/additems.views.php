@@ -2,9 +2,9 @@
 <?php require('partials/header.php') ?>
 <?php require('partials/navbar.php') ?>
 
-<div class="additems">
+<div class="additems" style="margin-bottom: 10px;">
     <div class="container">
-        <form class="form-container" method="post">
+        <form class="form-container" method="POST" enctype="multipart/form-data">
             <div class="input">
                 <div class="row">
                     <div class="col-md-12">
@@ -24,25 +24,28 @@
                         <input type="text" name="genre" placeholder="Genre" required="required" class="input-field" />
                     </div>
                     <div class="col-md-6">
-                        <input type="text" name="cover" placeholder="Image" required="required" class="input-field" />
+                        <input type="text" name="price" placeholder="Price" required="required" class="input-field" />
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
-                        <input type="text" name="maindesc" placeholder="MainDescription" required="required" class="input-field" />
+                    <div class="col-md-2">
+                        <img src="img/homepage/product/default.jpg" style="width: 150px;" class="img-preview">
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <input type="text" name="secdesc" placeholder="SecDescription" required="required" class="input-field" />
+                    <div class="col-md-4">
+                        <input type="file" name="cover" placeholder="Image" class="gambar input-field" onchange="previewImage()"/>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-md-6">
                         <input type="text" name="rating" placeholder="Rating ( 0% - 100% )" required="required" class="input-field" />
                     </div>
-                    <div class="col-md-6">
-                        <input type="text" name="price" placeholder="Price" required="required" class="input-field" />
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" name="main_desc" placeholder="Main Description" required="required" class="input-field" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" name="sec_desc" placeholder="Sec Description" required="required" class="input-field" />
                     </div>
                 </div>
                 <div class="row">
@@ -65,5 +68,6 @@
         </form>
     </div>
 </div>
+
 
 <?php require('partials/footer.php') ?>

@@ -15,6 +15,9 @@
         <li class="nav-item">
           <a class="nav-link" href="login.php">Login</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="admin.php">Admin</a>
+        </li>
       </ul>
       <div class="searchbar">
         <form class="d-flex" role="search" action="" method="POST" >

@@ -3,11 +3,11 @@
 
 <div class="updateitems">
     <div class="container">
-        <form class="form-container" method="post">
+        <form class="form-container" method="post" enctype="multipart/form-data">
             <div class="input">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3>Add Items</h3>
+                        <h3>Edit Items</h3>
                     </div>
                 </div>
                 <input type="hidden" name="id" value="<?= $prdct["id"];?>">
@@ -26,9 +26,13 @@
                     <label>Genre</label>
                         <input type="text" name="genre" placeholder="Genre" required="required" class="input-field" value="<?= $prdct["genre"]?>"/>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
+                        <input type="hidden" name="old_cover" value="<?= $prdct['cover'];?>">
                     <label>Cover</label>
-                        <input type="text" name="cover" placeholder="Image" required="required" class="input-field" value="<?= $prdct["cover"]?>"/>
+                        <input type="file" name="cover" placeholder="Image" class="gambar input-field" onchange="previewImage()"/>
+                    </div>
+                    <div class="col-md-2">
+                        <img src="img/homepage/product/<?= $prdct["cover"]; ?>" style="width: 150px;" class="img-preview">
                     </div>
                 </div>
                 <div class="row">

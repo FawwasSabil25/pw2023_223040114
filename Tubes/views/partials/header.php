@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/contents/regispage.css">
     <link rel="stylesheet" href="css/contents/itemdet.css">
     <link rel="stylesheet" href="css/contents/adminpage.css">
-    <link rel="stylesheet" href="css/contents/footer.css">
     <link rel="stylesheet" href="css/contents/additems.css">
     <link rel="stylesheet" href="css/contents/edititems.css">
     <link rel="stylesheet" href="css/contents/updateitems.css">
@@ -21,5 +20,5 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SVR shop | <?= $title; ?></title>
 </head>
-<body style="background-color: rgb(102, 52, 127)">
+<body style="background-color: rgb(102, 52, 127);">
 

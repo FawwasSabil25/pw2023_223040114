@@ -10,6 +10,11 @@ if(isset($_POST['add'])){
                 alert('Item Successfully Added');
                 document.location.href = 'index.php'
                 </script>";
+    }else{
+        echo "<Script>
+                alert('Item add fail');
+                document.location.href = 'index.php'
+                </script>";
     }
 
 }

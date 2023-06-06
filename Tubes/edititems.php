@@ -13,19 +13,7 @@
                     document.location.href = index.php;
                 </script>
             ";
-    }else{
-        echo "
-                <script>
-                    alert('Item Deletion Failed !');
-                    document.location.href = index.php;
-                </script>
-            ";
     }
-
-
-
-
-
     require("views/edititems.views.php");
 
 

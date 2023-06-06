@@ -1,14 +1,10 @@
 footer{
     background-color: rgb(55, 48, 107);
     height: 100px;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 9999;
 }
 footer .foot-container {
     display: flex;

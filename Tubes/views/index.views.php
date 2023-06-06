@@ -17,11 +17,11 @@
 </div>
 
 <?php endif;?>
-
+<div class="container">
 <div class="row row-cols-1 row-cols-md-5 g-4">
     <?php foreach ($product as $prdct): ?>
         <div class="col">
-            <a href="">
+            <a href="itemdet.php?id=<?= $prdct["id"] ?>">
                 <div class="card h-100" style="background-color: rgba(203, 203, 203, 0.3);">
                     <img src="img/homepage/product/<?= $prdct["cover"] ?>" class="card-img-top"
                         style="max-width: 100%; height: auto;">
@@ -62,10 +62,7 @@
     <?php endforeach; ?>
 
 </div>
-<br>
-<br>
-<br>
-<br>
+</div>
 <br>
 
 
