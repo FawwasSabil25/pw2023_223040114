@@ -187,16 +187,77 @@ function login($data){
     $username = htmlspecialchars($data['username']);
     $password = htmlspecialchars(($data['password']));
 
-    if(query("SELECT * FROM user WHERE username = '$username' && password = '$password'")){
-        //set session
+
+    //cek dulu username
+    if($user = query("SELECT * FROM user WHERE username = '$username'")){
+        //cek password
+        if(password_verify($password, $user[0]['password'])){
+
+            //set session
         $_SESSION['login'] = true;
 
         header("location: index.php");
         exit;
-    }else{
-        return[
-            'error' => true,
-            'pesan' => 'wrong username/password !'
-        ];
+        }
+        
     }
+}
+
+function registrasi($data){
+    $conn = koneksi();
+
+    $name = htmlspecialchars($data['name']);
+    $username = htmlspecialchars(strtolower($data['username']));
+    $email = htmlspecialchars($data['email']);
+    $password1 = mysqli_real_escape_string($conn, $data['password1']);
+    $password2 = mysqli_real_escape_string($conn, $data['password2']);
+
+
+    //jika username atau password kosong
+    if(empty($username) || empty($password1) || empty($password2)){
+        echo "<script>
+                    alert('username/password cannot be empty!');
+                    document.location.href = 'regis.php';
+                </script>";
+        return false;
+    }
+
+    //jika username udah ada
+    if(query("SELECT * FROM user WHERE username = '$username'")){
+        echo "<script>
+                    alert('username taken!');
+                    document.location.href = 'regis.php';
+                </script>";
+        return false;
+    }
+
+    //jika konfirmasi password tidak sesuai
+    if($password1 != $password2 ){
+        echo "<script>
+                    alert('Password did not match');
+                    document.location.href = 'regis.php';
+                </script>";
+        return false;
+    }
+
+    //membatasi password
+    if(strlen($password1)<= 5 ){
+        echo "<script>
+                    alert('password can't be less than 5 chars');
+                    document.location.href = 'regis.php';
+                </script>";
+            return false;
+    }
+
+    //jika password dan username sesuai
+    //enkripsi password
+    $password_baru = password_hash($password1, PASSWORD_DEFAULT);
+    //insert ke tabel
+    $query = "INSERT INTO user 
+                VALUES
+                (null, '$name', '$username', '$email', '$password_baru')
+                ";
+
+    mysqli_query($conn, $query) or die(mysqli_error($conn));
+    return mysqli_affected_rows($conn);
 }
