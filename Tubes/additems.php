@@ -1,6 +1,13 @@
 <?php
     $title = 'Add Items';
     require('functions.php');
+    
+    session_start();
+
+if(!isset($_SESSION['login'])){
+    header('location: login.php');
+    exit;
+}
 
 //insert data items jika mengklik submit
 if(isset($_POST['add'])){

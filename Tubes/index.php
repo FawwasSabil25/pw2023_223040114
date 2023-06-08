@@ -1,8 +1,15 @@
 <?php
-    require('functions.php');
+session_start();
 
-    $title = 'Home';
-    $product = query("SELECT * FROM items");
+if(!isset($_SESSION['login'])){
+    header('location: login.php');
+    exit;
+}
 
-    require('views/index.views.php');
+require('functions.php');
+
+$title = 'Home';
+$product = query("SELECT * FROM items");
+
+require('views/index.views.php');
 ?>
