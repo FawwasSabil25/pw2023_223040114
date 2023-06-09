@@ -53,9 +53,6 @@
                         <input type="text" name="rating" placeholder="Rating ( 0% - 100% )" required="required" class="input-field" value="<?= $prdct["rating"]?>"/>
                     </div>
                     <div class="col-md-6">
-                    <label>Price</label>
-                        <input type="text" name="price" placeholder="Price" required="required" class="input-field" value="<?= $prdct["price"]?>"/>
-                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">

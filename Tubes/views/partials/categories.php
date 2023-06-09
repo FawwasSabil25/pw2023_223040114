@@ -5,37 +5,37 @@
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-6">
             <div class="category-menu">
-                <a href=""><img src="img/homepage/category/race.png" class="img-category mt-4"></a>
+                <a href="index.php?category=Driving"><img src="img/homepage/category/race.png" class="img-category mt-4"></a>
                 <p class="mt-2">Driving</p>
             </div>
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-6">
             <div class="category-menu">
-                <a href=""><img src="img/homepage/category/adventure.png" class="img-category mt-4"></a>
+                <a href="index.php?category=Adventure"><img src="img/homepage/category/adventure.png" class="img-category mt-4"></a>
                 <p class="mt-2">Adventure</p>
             </div>
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-6">
             <div class="category-menu">
-                <a href=""><img src="img/homepage/category/fighter.png" class="img-category mt-4"></a>
-                <p class="mt-2">Fighter</p>
+                <a href="index.php?category=Fighting"><img src="img/homepage/category/fighter.png" class="img-category mt-4"></a>
+                <p class="mt-2">Fighting</p>
             </div>
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-6">
             <div class="category-menu">
-                <a href=""><img src="img/homepage/category/shooting.png" class="img-category mt-4"></a>
+                <a href="index.php?category=SHooter"><img src="img/homepage/category/shooting.png" class="img-category mt-4"></a>
                 <p class="mt-2">Shooter</p>
             </div>
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-6">
             <div class="category-menu">
-                <a href=""><img src="img/homepage/category/rpg.png" class="img-category mt-4"></a>
+                <a href="index.php?category=RPG"><img src="img/homepage/category/rpg.png" class="img-category mt-4"></a>
                 <p class="mt-2">RPG</p>
             </div>
         </div>
         <div class="col-lg-2 col-md-3 col-sm-4 col-6">
             <div class="category-menu">
-                <a href=""><img src="img/homepage/category/simulations.png" class="img-category mt-4"></a>
+                <a href="index.php?category=Simulations"><img src="img/homepage/category/simulations.png" class="img-category mt-4"></a>
                 <p class="mt-2">Simulations</p>
             </div>
         </div>

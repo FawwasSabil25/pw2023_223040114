@@ -78,7 +78,6 @@ function add($items){
     $publisher = htmlspecialchars($items['publisher']);
     $genre = htmlspecialchars($items['genre']);
     $rating = htmlspecialchars($items['rating']);
-    $price = htmlspecialchars($items['price']);
     $main_desc = htmlspecialchars($items['main_desc']);
     $sec_desc = htmlspecialchars($items['sec_desc']);
     // $cover = htmlspecialchars($items['$sec_desc']);
@@ -92,7 +91,7 @@ if(!$cover){
 $query = "  INSERT INTO 
                 items
             VALUES
-                (null,'$name','$publisher','$genre','$rating','$price','$main_desc','$sec_desc','$cover')";
+                (null,'$name','$publisher','$genre','$rating','$main_desc','$sec_desc','$cover')";
 
     mysqli_query($conn, $query) or die(mysqli_error($conn));
 
@@ -191,21 +190,25 @@ function login($data){
     $username = htmlspecialchars($data['username']);
     $password = htmlspecialchars($data['password']);
 
-
     //cek dulu username
     if($user = query("SELECT * FROM user WHERE username = '$username'")){
         //cek password
         if(password_verify($password, $user[0]['password'])){
 
-            //set session
-        $_SESSION['login'] = true;
+            $id = $user[0]['id'];
 
-        header("location: index.php");
-        exit;
+            $_SESSION['login'] = true;
+            $_SESSION['id'] = $id;
+
+
+            return $user[0];
         }
-        
     }
+    
+    return false;
 }
+
+
 
 function registrasi($data){
     $conn = koneksi();
@@ -265,3 +268,58 @@ function registrasi($data){
     mysqli_query($conn, $query) or die(mysqli_error($conn));
     return mysqli_affected_rows($conn);
 }
+
+function updateProfile($id, $name, $username, $email, $newPassword)
+{
+    $conn = koneksi();
+
+    $query = "UPDATE user SET name = ?, username = ?, email = ?, password = ? WHERE id = ?";
+    $stmt = $conn->prepare($query);
+
+    $hashedPassword = password_hash($newPassword, PASSWORD_DEFAULT);
+
+    $stmt->bind_param("ssssi", $name, $username, $email, $hashedPassword, $id);
+
+    if ($stmt->execute()) {
+        return true;
+    } else {
+        // Update failed
+        return false;
+    }
+}
+
+// Add item to wishlist
+function addToWishlist($user_id, $item_id) {
+    $conn = koneksi();
+
+    // Prepare the SQL statement
+    $stmt = $conn->prepare("INSERT INTO wishlist (user_id, item_id) VALUES (?, ?)");
+    $stmt->bind_param("ii", $user_id, $item_id);
+
+    // Execute the SQL statement
+    if ($stmt->execute()) {
+        // Wishlist item added successfully
+        return true;
+    } else {
+        // Failed to add item to wishlist
+        return false;
+    }
+}
+
+// Function to retrieve user name based on ID
+function getUserName($userId) {
+    $conn = koneksi();
+
+    $query = "SELECT name FROM user WHERE id = ?";
+    $stmt = mysqli_prepare($conn, $query);
+    mysqli_stmt_bind_param($stmt, "i", $userId);
+    mysqli_stmt_execute($stmt);
+    mysqli_stmt_bind_result($stmt, $name);
+    mysqli_stmt_fetch($stmt);
+
+    mysqli_stmt_close($stmt);
+    mysqli_close($conn);
+
+    return $name ? ['name' => $name] : false;
+}
+

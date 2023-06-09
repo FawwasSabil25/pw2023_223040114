@@ -23,9 +23,6 @@
                     <div class="col-md-6">
                         <input type="text" name="genre" placeholder="Genre" required="required" class="input-field" />
                     </div>
-                    <div class="col-md-6">
-                        <input type="text" name="price" placeholder="Price" required="required" class="input-field" />
-                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-2">

@@ -7,9 +7,18 @@ if(!isset($_SESSION['login'])){
     exit;
 }
 
-
 $title = 'Home';
-$product = query("SELECT * FROM items");
+
+// Check if a specific category is selected
+if(isset($_GET['category'])){
+    $selectedGenre = $_GET['category'];
+
+    // Fetch items matching the selected genre
+    $product = query("SELECT * FROM items WHERE genre = '$selectedGenre'");
+} else {
+    // Fetch all items
+    $product = query("SELECT * FROM items");
+}
 
 require('views/index.views.php');
 ?>

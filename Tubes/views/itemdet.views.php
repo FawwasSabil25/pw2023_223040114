@@ -34,9 +34,9 @@
                         <h2><?= $prdct['price'];?></h2>
                     </div>
                     <div class="col-lg-12">
-                        <a href="">
-                            <button class="btn-buy">
-                                <p>Buy</p>
+                        <a href="index.php">
+                            <button>
+                                <p>return</p>
                             </button>
                         </a>
                     </div>
@@ -45,5 +45,5 @@
         </div>
     </div>
 </div>
-
+<br>
 <?php require('partials/footer.php') ?>

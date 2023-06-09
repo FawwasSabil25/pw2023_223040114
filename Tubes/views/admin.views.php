@@ -4,7 +4,7 @@
 <div class="admin">
 
 <div class="welcome-text">
-    <h2>Welcome, Admin!</h2>
+    <h2>Welcome, <?= $user['name']; ?></h2>
   </div>
 
 <div class="row row-cols-1 row-cols-md-2 g-4" style="margin-bottom: 55px;">
@@ -35,7 +35,7 @@
     </a>
   </div>
   <div class="col">
-    <a href="">
+    <a href="profile.php">
       <div class="card">
         <div class="card-body d-flex flex-column align-items-center justify-content-center">
           <div class="card-icon">
@@ -52,10 +52,10 @@
       <div class="card">
         <div class="card-body d-flex flex-column align-items-center justify-content-center">
           <div class="card-icon">
-            <img src="img/admin/cart.svg" class="d-block img-fluid" alt="1">
+            <img src="img/admin/heart.svg" class="d-block img-fluid" alt="1">
           </div>
-          <h5 class="card-title">cart</h5>
-          <p class="card-text">Your Saved Items in Cart</p>
+          <h5 class="card-title">Wishlish</h5>
+          <p class="card-text">wishlist</p>
         </div>
       </div>
     </a>

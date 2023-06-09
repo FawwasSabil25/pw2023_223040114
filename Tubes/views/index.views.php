@@ -42,7 +42,7 @@
                                     </big>
                                 </div>
                                 <div class="card-footer card-button-group">
-                                    <button class="btn">Add to Cart</button>
+                                    <button class="btn">not working buy button</button>
                                 </div>
                             </div>
                         </a>

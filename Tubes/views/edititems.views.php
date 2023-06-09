@@ -15,7 +15,6 @@
                 <th scope="col">Name</th>
                 <th scope="col">Publisher</th>
                 <th scope="col">Genre</th>
-                <th scope="col">Price</th>
                 <th scope="col">Actions</th>
             </tr>
         </thead>
@@ -30,7 +29,6 @@
                     <td><?= $prdct['name']; ?></td>
                     <td><?= $prdct['publisher']; ?></td>
                     <td><?= $prdct['genre']; ?></td>
-                    <td><?= $prdct['price']; ?></td>
                     <td>
                         <a href="updateitems.php?id=<?= $prdct["id"];?>" class="edit">
                             <button>Edit</button>

@@ -1,0 +1,96 @@
+/* profile page */
+.profile .form-container {
+    background-color: rgba(251, 251, 251, 0.3);
+    position: relative;
+    width: fit-content;
+    left: 50%;
+    margin-top: 20%;
+    margin-bottom: -9%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 0 #0000;
+    padding: 30px;
+}
+.profile .form-container h3 {
+    color: beige;
+    text-align: center;
+}
+.profile .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.profile .input input {
+    width: 100%;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    color: pink;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+.profile input::placeholder {
+    color: white;
+}
+.profile .row{
+    width: 100%;
+}
+.profile .input button.submit {
+    width: 100%;
+    background-color: white;
+    color: purple;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.profile .input button.submit:hover{
+    background-color: pink;
+    color: black;
+    transition: 0.3s;
+}
+.profile .input button.submit:active{
+    background-color: black;
+    color: pink;
+}
+.profile .input button.reset {
+    width: 100%;
+    background-color: purple;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.profile .input button.reset:hover{
+    background-color: black;
+    color: pink;
+    transition: 0.3s;
+}
+.profile .input button.reset:active{
+    background-color: pink;
+    color: black;
+}
+.profile .input span {
+    margin-top: 15px;
+    color: beige;
+}
+
+.profile .input span a {
+    text-decoration: none;
+    color: purple;
+}
+
+.profile .input span a:hover,
+.profile .input span a:active {
+    color: pink;
+}
