@@ -13,8 +13,8 @@
                 <th scope="col">#</th>
                 <th scope="col">Cover</th>
                 <th scope="col">Name</th>
-                <th scope="col">Genre</th>
                 <th scope="col">Publisher</th>
+                <th scope="col">Genre</th>
                 <th scope="col">Price</th>
                 <th scope="col">Actions</th>
             </tr>

@@ -1,10 +1,10 @@
-<?php require('partials/header.php') ?>
-<?php require('partials/navbar.php') ?>
-<?php require('partials/carousel.php') ?>
-<?php require('partials/categories.php') ?>
+<?php 
+   
+   require('../functions.php');
+   $product = search($_GET['keyword']);
+   ?>
 
-<div class="search-container">
-    <?php if ($product): ?>
+<?php if ($product): ?>
         <div class="container">
             <div class="row row-cols-1 row-cols-md-5 g-4">
                 <?php foreach ($product as $prdct): ?>
@@ -61,8 +61,3 @@
             </div>
         </div>
     <?php endif; ?>
-</div>
-<br>
-
-
-<?php require('partials/footer.php') ?>

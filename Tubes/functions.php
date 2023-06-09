@@ -169,7 +169,11 @@ function search($keyword){
     $keyword = mysqli_real_escape_string($conn, $keyword);
 
     $query = "SELECT * FROM items
-          WHERE name LIKE '%" . $keyword . "%'";
+          WHERE
+            name LIKE '%$keyword%' OR
+            publisher LIKE '%$keyword%' OR
+            genre LIKE '%$keyword%'
+          ";
 
 
     $result = mysqli_query($conn, $query);
@@ -185,7 +189,7 @@ function login($data){
     $conn = koneksi();
 
     $username = htmlspecialchars($data['username']);
-    $password = htmlspecialchars(($data['password']));
+    $password = htmlspecialchars($data['password']);
 
 
     //cek dulu username

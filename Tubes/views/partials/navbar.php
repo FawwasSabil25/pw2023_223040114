@@ -24,8 +24,8 @@
       </ul>
       <div class="searchbar">
         <form class="d-flex" role="search" action="" method="POST" >
-          <input class="form-control me-2" name="keyword" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn" type="submit" name="search">Search</button>
+          <input class="keyword form-control me-2" name="keyword" type="search" placeholder="Search" id="keyword">
+          <button class="search-button btn" type="submit" name="search" id="search">Search</button>
         </form>
       </div>
     </div>  
