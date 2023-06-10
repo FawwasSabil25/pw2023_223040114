@@ -44,6 +44,9 @@
     <a href="admin.php" class="return">
         <button>Return</button>
     </a>
+    <a href="print.php" target="_blank">
+        <button>Print</button>
+    </a>
     </div>
 </div>
 
